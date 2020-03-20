@@ -5,12 +5,11 @@ import java.io.PrintWriter;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.sun.javafx.css.CalculatedValue;
+import com.comit.web.controller.UserDao;
 
 public class LoginServlet extends HttpServlet {
 	private int a;
@@ -18,22 +17,21 @@ public class LoginServlet extends HttpServlet {
 	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
 		String userName = req.getParameter("name");
 		String pass = req.getParameter("pass");
-//		
-//		PrintWriter out = resp.getWriter();
-//		//URL forwarding servlet option-1
-//		req.setAttribute("k", 12);
-//		RequestDispatcher rd = req.getRequestDispatcher("square");
-//		rd.forward(req, resp);
-//		
-//		//Redirection Option-2
-//		resp.sendRedirect("square");
+		UserDao obj = new UserDao();
+		
+		System.out.println("asdasdasd");
+		
+		if(obj.validateLogin(userName, pass)) {
+			RequestDispatcher rd = req.getRequestDispatcher("Welcome.jsp");
+			rd.forward(req, resp);
+		}else {
+			RequestDispatcher rd = req.getRequestDispatcher("Error.jsp");
+			rd.forward(req, resp);
+		}
 		
 		
-	}
-	public void doGet(HttpServletRequest req, HttpServletResponse resp) {
-		
-	}
-	public void service(HttpServletRequest req, HttpServletResponse resp) {
+		PrintWriter out = resp.getWriter();
+		out.println("<h1>asdasd</h1>");
 		
 	}
 }
