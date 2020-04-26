@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 	id="WebApp_ID" version="3.1">
 	<display-name>ComitWinter</display-name>
-	<servlet>
+ 	<!-- <servlet>
 		<servlet-name>servletLogin</servlet-name>
 		<servlet-class>com.comit.winter.LoginServlet</servlet-class>
 	</servlet>
@@ -13,15 +13,11 @@
 		<url-pattern>/login</url-pattern>
 	</servlet-mapping>
 	<servlet>
-		<servlet-name>sq</servlet-name>
-		<servlet-class>com.comit.winter.Square</servlet-class>
+		<servlet-name>servletSignup</servlet-name>
+		<servlet-class>com.comit.winter.Signup</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>sq</servlet-name>
-		<url-pattern>/square</url-pattern>
-	</servlet-mapping>
-	<context-param>
-		<param-name>userName</param-name>
-		<param-value>root</param-value>
-	</context-param>
+		<servlet-name>servletSignup</servlet-name>
+		<url-pattern>/signup</url-pattern>
+	</servlet-mapping> -->
 </web-app>

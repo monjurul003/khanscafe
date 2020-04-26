@@ -2,7 +2,6 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>ComitWinter</groupId>
   <artifactId>com.comit.ComitWinter</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   <name>CafeKhan</name>
   <description>Create an website from bootstrap application</description>
@@ -35,4 +34,5 @@
 	</dependency>
   	
   </dependencies>
+  <version>1.0.0</version>
 </project>

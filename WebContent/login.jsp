@@ -23,7 +23,7 @@
 	rel="stylesheet">
 
 <!-- Custom styles for this template -->
-<link href="css/business-casual.min.css" rel="stylesheet">
+<link href="css/business-casual.css" rel="stylesheet">
 
 </head>
 
@@ -47,7 +47,7 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav mx-auto">
 					<li class="nav-item active px-lg-4"><a
-						class="nav-link text-uppercase text-expanded" href="index.html">Home
+						class="nav-link text-uppercase text-expanded" href="index.jsp">Home
 							<span class="sr-only">(current)</span>
 					</a></li>
 					<li class="nav-item px-lg-4"><a
@@ -57,7 +57,7 @@
 						class="nav-link text-uppercase text-expanded" href="products.html">Products</a>
 					</li>
 					<li class="nav-item px-lg-4"><a
-						class="nav-link text-uppercase text-expanded" href="store.html">Store</a>
+						class="nav-link text-uppercase text-expanded" href="Error.jsp">Store</a>
 					</li>
 					<li class="nav-item px-lg-4"><a
 						class="nav-link text-uppercase text-expanded"
@@ -73,19 +73,32 @@
 	<section class="page-section clearfix">
 		<div class="container">
 			<div class="intro">
-				<div class="bg-faded p-5 d-flex ml-auto rounded">
-					<h2 class="section-heading mb-0">
-						<span class="section-heading-upper">Blended to Perfection</span> <span
-							class="section-heading-lower">Coffees &amp; Teas</span>
-					</h2>
+
+				<div class="login-form">
+					<form action="login" method="post">
+						<h2 class="text-center">Log in</h2>
+						<div class="form-group">
+							<input type="text" name="name" class="form-control" placeholder="Username"
+								required="required">
+						</div>
+						<div class="form-group">
+							<input type="password" name="password" class="form-control"
+								placeholder="Password" required="required">
+						</div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-primary btn-block">Log
+								in</button>
+						</div>
+						<div class="clearfix">
+							<label class="pull-left checkbox-inline"><input
+								type="checkbox"> Remember me</label> <a href="#"
+								class="pull-right">Forgot Password?</a>
+						</div>
+					</form>
+					<p class="text-center">
+						<a href="#">Create an Account</a>
+					</p>
 				</div>
-				<form action="login" method="post">
-					<input type="text" name="name" placeholder="Insert User Name">
-					<br/> 
-					<input type="password" name="pass" placeholder="Insert Your Password"> 
-						
-						<input type="submit">
-				</form>
 			</div>
 		</div>
 	</section>

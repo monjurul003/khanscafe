@@ -63,7 +63,10 @@
 						class="nav-link text-uppercase text-expanded" href="contactus.html">Contact
 							Us</a></li>
 					<li class="nav-item px-lg-4"><a
-						class="nav-link text-uppercase text-expanded" href="login.html">Login</a>
+						class="nav-link text-uppercase text-expanded" href="login.jsp">Login</a>
+					</li>
+					<li class="nav-item px-lg-4"><a
+						class="nav-link text-uppercase text-expanded" href="signup.jsp">Sign Up</a>
 					</li>
 				</ul>
 			</div>
